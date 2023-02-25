@@ -49,6 +49,13 @@
 
 ![Screen Shot 2023-02-25 at 23 12 29](https://user-images.githubusercontent.com/68781074/221367482-96a3517d-26f0-4979-be68-683f2e4d006c.png)
 
+## Setup Ansible
+
+1. The first step to set up Ansible is to create the hosts and inventory files.
+
+![Screen Shot 2023-02-25 at 23 48 00](https://user-images.githubusercontent.com/68781074/221369169-c37e3305-c1d5-4a14-af67-5fe56ffe4354.png)
+
+![Screen Shot 2023-02-25 at 23 48 12](https://user-images.githubusercontent.com/68781074/221369173-40c94440-438e-4c18-aec8-881a54a2a684.png)
 
 
 
