@@ -39,7 +39,15 @@
 
 ![Screen Shot 2023-02-25 at 16 56 11](https://user-images.githubusercontent.com/68781074/221366894-94d3e1a8-0d54-4ef6-9e76-03d491a5aad0.png)
 
+5. Now our virtual machine has been successfully created using Terraform.
 
+![Screen Shot 2023-02-25 at 23 12 09](https://user-images.githubusercontent.com/68781074/221367471-5bc23960-9c3c-4134-bfdf-d4bf9de9abac.png)
+
+![Screen Shot 2023-02-25 at 23 12 15](https://user-images.githubusercontent.com/68781074/221367474-125ed62f-a020-4ebc-a707-5d2d65000fdb.png)
+
+![Screen Shot 2023-02-25 at 23 12 22](https://user-images.githubusercontent.com/68781074/221367478-3d4852a4-994f-4abd-b64e-6732d16690ab.png)
+
+![Screen Shot 2023-02-25 at 23 12 29](https://user-images.githubusercontent.com/68781074/221367482-96a3517d-26f0-4979-be68-683f2e4d006c.png)
 
 
 
