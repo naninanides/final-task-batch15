@@ -31,3 +31,22 @@
 
 4. Then, to start the process of creating a virtual machine, we can use the "terraform apply" command.
 
+![Screen Shot 2023-02-25 at 22 58 22](https://user-images.githubusercontent.com/68781074/221366841-245fa4a8-41e3-40e2-9613-7331049f577a.png)
+
+![Screen Shot 2023-02-25 at 16 53 02](https://user-images.githubusercontent.com/68781074/221366869-40791fd9-e075-4734-b9b8-9dea77650bd2.png)
+
+![Screen Shot 2023-02-25 at 16 54 55](https://user-images.githubusercontent.com/68781074/221366880-061569d4-56ca-4285-9b3d-dc4379c3c953.png)
+
+![Screen Shot 2023-02-25 at 16 56 11](https://user-images.githubusercontent.com/68781074/221366894-94d3e1a8-0d54-4ef6-9e76-03d491a5aad0.png)
+
+
+
+
+
+
+
+
+
+
+
+
