@@ -57,9 +57,49 @@
 
 ![Screen Shot 2023-02-25 at 23 48 12](https://user-images.githubusercontent.com/68781074/221369173-40c94440-438e-4c18-aec8-881a54a2a684.png)
 
+2. After that, we can create the Ansible playbook file based on our needs for the installation inside the virtual machine. To install Docker, we need to create the Ansible playbook first.
+
+![Screen Shot 2023-02-26 at 10 08 46](https://user-images.githubusercontent.com/68781074/221390134-8ace1ecf-4dca-4ec3-be8c-71a9370342b0.png)
+
+![Screen Shot 2023-02-26 at 10 08 51](https://user-images.githubusercontent.com/68781074/221390140-54457436-a78f-4f67-8fff-07de925a8cbb.png)
+
+3. then we can use command ansible-playbook "name-file.yml" for start the process.
+
+![Screen Shot 2023-02-26 at 10 15 57](https://user-images.githubusercontent.com/68781074/221390484-75bfe643-db97-4f60-b779-15e38218e816.png)
+
+![Screen Shot 2023-02-26 at 10 18 30](https://user-images.githubusercontent.com/68781074/221390487-c98d32fc-bbd5-4c0e-a436-255135e06be3.png)
+
+4. Docker done installing in all Virtual machine.
+
+![Screen Shot 2023-02-26 at 10 44 10](https://user-images.githubusercontent.com/68781074/221391223-2563dcbb-dba6-4a9b-8dc9-6f771c22fe0c.png)
+
+![Screen Shot 2023-02-26 at 10 45 08](https://user-images.githubusercontent.com/68781074/221391229-8db82016-69f1-4a1e-b1fe-c6c7d28c3c08.png)
+
+![Screen Shot 2023-02-26 at 10 45 35](https://user-images.githubusercontent.com/68781074/221391236-a4bd468f-67c3-45b4-9ce5-44c85aa733c8.png)
+
+![Screen Shot 2023-02-26 at 10 44 42](https://user-images.githubusercontent.com/68781074/221391239-9f88d680-b3cb-46d4-ae82-1aae8e923cdd.png)
+
+5. after we install docker, next we will need to install nginx for gateway server. i'll install native nginx not on top docker.
+
+![Screen Shot 2023-02-26 at 10 53 14](https://user-images.githubusercontent.com/68781074/221391427-e557cff7-0f61-486e-aa34-3c79c9413056.png)
+
+![Screen Shot 2023-02-26 at 10 53 25](https://user-images.githubusercontent.com/68781074/221391431-d01d9fc8-989b-433e-9504-e335e69a63a2.png)
+
+6. process installing nginx with ansible.
+
+![Screen Shot 2023-02-26 at 10 55 42](https://user-images.githubusercontent.com/68781074/221391505-3cb10875-8de3-41c2-8bc1-706a9a11343f.png)
+
+7. we can check if docker was install in virtual machine with.
+> sudo systemctl status nginx
+
+![Screen Shot 2023-02-26 at 10 57 08](https://user-images.githubusercontent.com/68781074/221391542-3ec62f62-15f1-41df-925b-e92a80d84562.png)
+
+![Screen Shot 2023-02-26 at 11 00 41](https://user-images.githubusercontent.com/68781074/221391618-800a68b8-bba9-44f2-867b-ffad761e38e9.png)
 
 
+8. The reverse proxy is working well, but an error occurred because we haven't yet executed the application that we want to deploy.
 
+![Screen Shot 2023-02-26 at 10 59 53](https://user-images.githubusercontent.com/68781074/221391653-f8266b17-cd42-4e94-89c7-1f1517fc14f9.png)
 
 
 
