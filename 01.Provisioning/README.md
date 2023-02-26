@@ -123,3 +123,42 @@
 ![Screen Shot 2023-02-26 at 12 41 42](https://user-images.githubusercontent.com/68781074/221394381-a1a19f2c-10c4-4911-93be-151a0776f5bd.png)
 
 
+### Install Monitoring App
+
+1. first we'll install a node exporter for appserver, gateway and monitoring server
+
+![Screen Shot 2023-02-26 at 15 13 14](https://user-images.githubusercontent.com/68781074/221399560-a5449836-7794-424e-a727-87b1a0b92505.png)
+
+![Screen Shot 2023-02-26 at 15 16 11](https://user-images.githubusercontent.com/68781074/221399659-c4275f38-8d34-4de6-9a95-88f116a68cb6.png)
+
+2. After installing the node exporter, we can check it by accessing the port that we previously configured.
+
+![Screen Shot 2023-02-26 at 15 21 17](https://user-images.githubusercontent.com/68781074/221399889-0a59765d-53a1-456a-85e4-bbf6c4a22ef8.png)
+
+![Screen Shot 2023-02-26 at 15 21 29](https://user-images.githubusercontent.com/68781074/221399893-c76b3686-4000-415c-a48a-696eeac7d915.png)
+
+![Screen Shot 2023-02-26 at 15 21 42](https://user-images.githubusercontent.com/68781074/221399900-30cf6bdc-03f3-4268-8e82-1e2283bee0b7.png)
+
+3. After that we can install prometheus and grafana, but before that i'll create config for prometheus.
+
+![Screen Shot 2023-02-26 at 15 23 30](https://user-images.githubusercontent.com/68781074/221399980-935ac48c-0f26-4949-9b9e-ec6d218cdf68.png)
+
+4. and for Ansible-playbook for installing prometheus and grafana like this.
+
+![Screen Shot 2023-02-26 at 15 22 51](https://user-images.githubusercontent.com/68781074/221400009-2dfeccfa-975a-4b09-b929-e33ccaf6bc33.png)
+
+5. installing process for prometheus and grafana.
+
+![Screen Shot 2023-02-26 at 15 27 08](https://user-images.githubusercontent.com/68781074/221400143-1a3a4b7b-b041-41f7-aeb3-63fd6995cc39.png)
+
+6. We can access it by using the port that we previously configured.
+
+![Screen Shot 2023-02-26 at 15 28 49](https://user-images.githubusercontent.com/68781074/221400218-62d69c19-b3f1-4498-ad3a-262e051fd0eb.png)
+
+![Screen Shot 2023-02-26 at 15 29 00](https://user-images.githubusercontent.com/68781074/221400227-2365a381-5a40-4b2c-b4a6-fe5cdbc3fdca.png)
+
+
+
+
+
+
