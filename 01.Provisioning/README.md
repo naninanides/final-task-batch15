@@ -108,6 +108,18 @@
 ![Screen Shot 2023-02-26 at 10 59 53](https://user-images.githubusercontent.com/68781074/221391653-f8266b17-cd42-4e94-89c7-1f1517fc14f9.png)
 
 
+### Install Jenkins
 
+1. we'll setup ansible playbook for installing jenkins.
+
+![Screen Shot 2023-02-26 at 12 43 54](https://user-images.githubusercontent.com/68781074/221394451-8b7c5ae8-fc7f-4052-a475-747839c509ad.png)
+
+2. after that we can start ansible-playbok for installing jenkins.
+
+![Screen Shot 2023-02-26 at 12 43 20](https://user-images.githubusercontent.com/68781074/221394441-01b39c62-f42a-4f60-ba8e-20bcacc7e30f.png)
+
+3. jenkins now running on top docker.
+
+![Screen Shot 2023-02-26 at 12 41 42](https://user-images.githubusercontent.com/68781074/221394381-a1a19f2c-10c4-4911-93be-151a0776f5bd.png)
 
 
