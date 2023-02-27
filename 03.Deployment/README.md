@@ -143,11 +143,141 @@
 ![Screen Shot 2023-02-28 at 1 21 33](https://user-images.githubusercontent.com/68781074/221650162-36a4801a-4c42-4458-b1da-2ed264e2b361.png)
 
 
+### Create Pipeline
 
+1. Untuk membuat sebuah pipeline kita bisa mengklik new item dan kita pilih jenis pipeline apa yang kita inginkan
 
+![Screen Shot 2023-02-28 at 1 29 10](https://user-images.githubusercontent.com/68781074/221651656-aa5ab7b2-1efe-4465-9645-eefe0cf72215.png)
 
+![Screen Shot 2023-02-28 at 1 29 07](https://user-images.githubusercontent.com/68781074/221651745-ba30046a-aae7-4238-8e12-3dc6963ab398.png)
 
+2. untuk di konfigurasi kita bisa mengklik Github hook triger bertujuan agar terintegerasi oleh github
 
+![Screen Shot 2023-02-28 at 1 33 28](https://user-images.githubusercontent.com/68781074/221652472-d0fe3e23-7e90-4b01-bd90-4ee2d103b76f.png)
+
+3. Lalu pada Pipeline kurang lebih seperti ini untuk konfigurasinya
+
+![Screen Shot 2023-02-28 at 1 37 49](https://user-images.githubusercontent.com/68781074/221653760-e5e6a4c6-d19e-4f95-826d-dea2de9ffb51.png)
+
+![Screen Shot 2023-02-28 at 1 41 19](https://user-images.githubusercontent.com/68781074/221653959-0ea4a00a-f772-4aa8-986d-f2cb7c095a3e.png)
+
+![Screen Shot 2023-02-28 at 1 40 03](https://user-images.githubusercontent.com/68781074/221653778-f18b833c-903e-4e7e-835c-28b36c2872d0.png)
+
+4. lalu kita siapkan untuk jenkinsfilenya di dalam git
+
+![Screen Shot 2023-02-28 at 1 57 52](https://user-images.githubusercontent.com/68781074/221657213-2f9c2a5e-f8c4-4e03-876a-64746c3dbd6a.png)
+
+```
+My Drive
+pipeline {
+    agent any
+
+    environment{
+        def branch = "Production"
+        def nama_repository = "origin"
+        def directory = "~/dumbmerch-fe"
+        def credential = 'bhq'
+        def server = 'bhq@10.84.198.151'
+        def docker_image = 'naninanides/dumbmerch-fe-production'
+        def nama_container = 'backend'
+    }
+
+    options {
+        disableConcurrentBuilds()
+        timeout(time: 30, unit: 'MINUTES')
+    }
+
+    stages {
+
+        stage('Notif nih BOS') {
+            steps {
+                discordSend description: '', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Mulai jalan nih ', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+            }
+        }
+
+        stage('pull repository dari github ') {
+            steps {
+                sshagent([credential]){
+                    sh"""
+                    ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    git pull ${nama_repository} ${branch}
+                    exit
+                    EOF"""
+                }
+            }
+        }
+
+        stage('docker compose down') {
+            steps {
+                sshagent([credential]){
+                    sh"""
+                    ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker compose down
+                    exit
+                    EOF"""
+                }
+            }
+        }
+
+        stage('build image frontend') {
+            steps {
+                sshagent([credential]){
+                    sh"""ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker build -t ${docker_image}:latest .
+                    exit
+                    EOF"""
+                }
+            }
+        }
+
+        stage('jalankan docker compose') {
+            steps {
+                sshagent([credential]){
+                    sh"""ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker compose up -d
+                    exit
+                    EOF
+                    """
+                }
+            }
+        }
+    }
+
+        stage('push image ke dockerhub') {
+            steps {
+                sshagent([credential]){
+                    sh"""
+                    ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    cd ${directory}
+                    docker image push ${docker_image}:latest
+                    exit
+                    EOF"""
+                }
+            }
+        }
+    }
+    post {
+
+        aborted {
+            discordSend description: 'kok di gagalin', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+        }
+        failure {
+            discordSend description: 'gagal nih bosss', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+        }
+
+        success {
+            discordSend description: 'berhasil nih bos', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+        }
+        
+    }
+}
+```
+
+5. 
 
 
 
