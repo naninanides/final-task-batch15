@@ -4,7 +4,7 @@
 
 ## Application
 
-### Build Images Frontend & Backend
+### Build Images Frontend & Backend For Production
 
 1. Create Dockerfile for frontend 
 
@@ -65,6 +65,45 @@
 
 
 ## CICD
+
+### Setup Jenkins
+
+1. pertama kita masuk terlebih dahulu ke dalam jenkin melalui port yang sudah kita atur
+
+![Screen Shot 2023-02-28 at 0 21 35](https://user-images.githubusercontent.com/68781074/221641242-7381a07d-5452-4c85-98ae-bd06b30acea5.png)
+
+2. untuk login kita bisa mengecek password admin lewat logs didalam docker container
+
+![Screen Shot 2023-02-28 at 0 22 42](https://user-images.githubusercontent.com/68781074/221641387-5cc28f4d-b385-4ba8-b68f-6c88c3c06b6b.png)
+
+3. untuk halaman setelah login kita bisa memilih custom plugin untuk penginstallan pertama dan yang akan kita tambahkan adalah plugin sshagent
+
+![Screen Shot 2023-02-28 at 0 23 02](https://user-images.githubusercontent.com/68781074/221641992-4f6233ce-5952-4667-b021-7d9d7c740824.png)
+
+![Screen Shot 2023-02-28 at 0 23 55](https://user-images.githubusercontent.com/68781074/221642063-1352dcde-9dd4-4d0f-b57d-ad9a6b060e7c.png)
+
+4. Proses installasi Jenkins
+
+![Screen Shot 2023-02-28 at 0 25 13](https://user-images.githubusercontent.com/68781074/221643224-3976dcad-993b-48fc-b14a-53ca7e9b6d90.png)
+
+5. Lalu kita setup untuk create admin user
+
+![Screen Shot 2023-02-28 at 0 29 10](https://user-images.githubusercontent.com/68781074/221644060-e866bacc-b31f-418b-8217-2929d4962d9c.png)
+
+![Screen Shot 2023-02-28 at 0 29 37](https://user-images.githubusercontent.com/68781074/221644105-aad47e82-6057-4247-9208-2ba3433799fa.png)
+
+6. lalu kita masukan domain untuk jenkins
+
+![Screen Shot 2023-02-28 at 0 29 56](https://user-images.githubusercontent.com/68781074/221644295-9c49f210-f115-4a75-b82b-06c03eb7029c.png)
+
+7. kurang lebih jika proses installasi selesai maka akan seperti ini
+
+![image](https://user-images.githubusercontent.com/68781074/218250548-fd9a4bc3-fa10-44da-ba6a-aa57e92c0955.png)
+
+8. dashboard jenkin seperti ini
+
+![Screen Shot 2023-02-28 at 0 30 26](https://user-images.githubusercontent.com/68781074/221644508-2d658d50-9a87-45b6-8e29-8ef7e80594df.png)
+
 
 
 
