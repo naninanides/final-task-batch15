@@ -2,7 +2,9 @@
 
 # Deployment
 
-## Build Images Frontend & Backend
+## Application
+
+### Build Images Frontend & Backend
 
 1. Create Dockerfile for frontend 
 
@@ -24,7 +26,7 @@
 
 ![Screen Shot 2023-02-27 at 23 52 13](https://user-images.githubusercontent.com/68781074/221627816-6b761caa-ff49-4cb1-9385-a7e15382aa10.png)
 
-## Make Docker compose for running the images
+### Make Docker compose for running the images
 
 1. create docker-compose.yml for frontend
 
@@ -38,7 +40,7 @@
 
 ![Screen Shot 2023-02-27 at 23 56 36](https://user-images.githubusercontent.com/68781074/221628863-33d7eaf2-0391-477f-ab2d-0682a168764c.png)
 
-## Running Docker Container with image was build before
+### Running Docker Container with image was build before
 
 1. first we could run database
 
@@ -61,6 +63,8 @@
 
 ![Screen Shot 2023-02-27 at 21 34 16](https://user-images.githubusercontent.com/68781074/221632556-4d5af302-e8aa-45e5-a900-3389edb6aac0.png)
 
+
+## CICD
 
 
 
