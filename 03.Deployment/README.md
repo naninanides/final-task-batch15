@@ -36,7 +36,7 @@
 
 ![Screen Shot 2023-02-27 at 23 55 57](https://user-images.githubusercontent.com/68781074/221628760-75b688ba-176e-4ae7-902e-a9a4fb628fbb.png)
 
-3. create docker-compose.yml for database
+3. create docker-compose.yml for database we use PosgresSQL for database
 
 ![Screen Shot 2023-02-27 at 23 56 36](https://user-images.githubusercontent.com/68781074/221628863-33d7eaf2-0391-477f-ab2d-0682a168764c.png)
 
@@ -66,7 +66,7 @@
 
 ## CICD
 
-### Setup Jenkins
+### Install Jenkins
 
 1. pertama kita masuk terlebih dahulu ke dalam jenkin melalui port yang sudah kita atur
 
@@ -104,11 +104,43 @@
 
 ![Screen Shot 2023-02-28 at 0 30 26](https://user-images.githubusercontent.com/68781074/221644508-2d658d50-9a87-45b6-8e29-8ef7e80594df.png)
 
+### Setup Jenkins
 
+1. langkah pertama yang kita akan lakukan adalah setup untuk ssh credential jenkinsnya, kita bisa menggenerate ssh keynya terlebih dahulu
 
+![Screen Shot 2023-02-28 at 0 58 34](https://user-images.githubusercontent.com/68781074/221645296-da8445e5-c092-428b-b508-2f52122733c7.png)
 
+2. kita akan mengambil key dari ssh-keygen yang sudah kita generate tadi
 
+![Screen Shot 2023-02-28 at 0 59 58](https://user-images.githubusercontent.com/68781074/221645634-3d9f9c22-46db-45a8-8cfe-76292a65e37b.png)
 
+3. Lalu pada dashboard klik manage jenkins lalu pilih manage credentials dan akan menambahkan credential untuk jenkins
+
+![Screen Shot 2023-02-28 at 1 00 36](https://user-images.githubusercontent.com/68781074/221646268-bd2db535-e702-4de1-96ff-7a033258ce1e.png)
+
+![Screen Shot 2023-02-28 at 1 00 51](https://user-images.githubusercontent.com/68781074/221648858-0c710341-a277-47ac-9ba3-e2c7db1a331d.png)
+
+![Screen Shot 2023-02-28 at 1 00 54](https://user-images.githubusercontent.com/68781074/221648884-aea24cff-2c2b-4698-b2cf-6842bde539e1.png)
+
+![Screen Shot 2023-02-28 at 1 01 26](https://user-images.githubusercontent.com/68781074/221648906-bdbf225b-d9b3-4725-b2db-53536864cbfb.png)
+
+4. lalu kita masukan key yang sudah kita generate tadi
+
+![Screen Shot 2023-02-28 at 1 17 58](https://user-images.githubusercontent.com/68781074/221649378-346b4102-2317-44bb-adf9-4f7440a62046.png)
+
+![Screen Shot 2023-02-28 at 1 18 00](https://user-images.githubusercontent.com/68781074/221649397-358492b4-9816-48d9-90be-31828b79bfaa.png)
+
+5. kita sudah menambahkan credential
+
+![Screen Shot 2023-02-28 at 1 19 00](https://user-images.githubusercontent.com/68781074/221649718-90064ba4-8dcb-4b89-9d94-e8c5baa5d341.png)
+
+6. lalu setelah itu kita masukan key.pub ke dalam github
+
+![Screen Shot 2023-02-28 at 1 20 36](https://user-images.githubusercontent.com/68781074/221650099-97a8f5b3-0e42-462f-91c5-3ef819fa2166.png)
+
+![Screen Shot 2023-02-28 at 1 21 12](https://user-images.githubusercontent.com/68781074/221650125-4b62e9de-9836-4d08-8726-49fce4ec0b3b.png)
+
+![Screen Shot 2023-02-28 at 1 21 33](https://user-images.githubusercontent.com/68781074/221650162-36a4801a-4c42-4458-b1da-2ed264e2b361.png)
 
 
 
