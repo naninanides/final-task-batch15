@@ -40,6 +40,34 @@
 
 ## Running Docker Container with image was build before
 
+1. first we could run database
+
+![Screen Shot 2023-02-28 at 0 09 19](https://user-images.githubusercontent.com/68781074/221631738-6b41da97-3c76-4e1b-b0ed-b58ef0da500d.png)
+
+2. and then we can run docker container frontend & backend
+
+![Screen Shot 2023-02-28 at 0 11 11](https://user-images.githubusercontent.com/68781074/221632127-f253e755-b5bb-466e-ba14-9e1f987a9b20.png)
+
+3. we can check if docker container is running with command
+> docker ps -a
+
+![Screen Shot 2023-02-28 at 0 11 54](https://user-images.githubusercontent.com/68781074/221632275-9b703238-0eba-4ea7-b9a5-038fafd71805.png)
+
+4. now we can access application we just deploy from docker
+
+![Screen Shot 2023-02-28 at 0 12 40](https://user-images.githubusercontent.com/68781074/221632461-1a7b07e9-c4b2-41e8-9aad-b45cb287e0aa.png)
+
+![Screen Shot 2023-02-27 at 21 33 39](https://user-images.githubusercontent.com/68781074/221632524-6c1ba724-b5b4-45f7-935f-d85b6494ef1d.png)
+
+![Screen Shot 2023-02-27 at 21 34 16](https://user-images.githubusercontent.com/68781074/221632556-4d5af302-e8aa-45e5-a900-3389edb6aac0.png)
+
+
+
+
+
+
+
+
 
 
 
