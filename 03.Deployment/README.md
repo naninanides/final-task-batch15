@@ -63,6 +63,54 @@
 
 ![Screen Shot 2023-02-27 at 21 34 16](https://user-images.githubusercontent.com/68781074/221632556-4d5af302-e8aa-45e5-a900-3389edb6aac0.png)
 
+### Build docker images for production
+
+1. First, we create a Dockerfile for production, but here I am not using 'npm start'.
+
+![Screen Shot 2023-02-28 at 23 29 09](https://user-images.githubusercontent.com/68781074/221916205-3d9ed751-4a32-4df2-9191-9028ede47629.png)
+
+```
+FROM node:16-alpine3.11 as staging
+WORKDIR /home/app
+COPY . .
+RUN npm install
+RUN npm run build
+
+FROM node:16-alpine3.11
+WORKDIR /home/app
+COPY --from=staging /home/app /home/app
+RUN npm install -g server
+EXPOSE 3000
+CMD ["npx","serve","build","-l","3000"]
+```
+![Screen Shot 2023-02-28 at 23 34 29](https://user-images.githubusercontent.com/68781074/221917588-47c1da95-8070-4029-9a62-b9d19c101a94.png)
+
+```
+FROM golang:1.18-alpine as distroless
+WORKDIR /home/app
+COPY . .
+RUN CGO_ENABLED=0  go build
+
+#distroless
+FROM gcr.io/distroless/cc-debian11
+WORKDIR /home/app
+COPY --from=distroless /home/app /home/app
+CMD ["/home/app/dumbmerch"]
+```
+
+2. Then, we first change the Git from staging to production.
+
+![Screen Shot 2023-02-28 at 23 33 47](https://user-images.githubusercontent.com/68781074/221917352-ab3bd94a-add4-43d0-b01b-7040f85e5af3.png)
+
+3. After that, we build the production image.
+
+![Screen Shot 2023-02-28 at 23 31 45](https://user-images.githubusercontent.com/68781074/221918042-7ba8dddf-bc87-45ed-9ed2-e0e6051835a2.png)
+
+![Screen Shot 2023-02-28 at 23 37 07](https://user-images.githubusercontent.com/68781074/221918236-695881e1-5df7-4987-ac45-64d20718394e.png)
+
+4. The image for production is now complete. For the database, I am using distroless images for production.
+
+![Screen Shot 2023-02-28 at 23 38 46](https://user-images.githubusercontent.com/68781074/221918618-c0507cb1-a1c2-4b09-97ec-c8b7f4e1c72f.png)
 
 ## CICD
 
