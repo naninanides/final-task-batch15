@@ -141,17 +141,17 @@
 
 ### Create Pipeline
 
-1. Untuk membuat sebuah pipeline kita bisa mengklik new item dan kita pilih jenis pipeline apa yang kita inginkan
+1. To create a pipeline, we can click on 'New Item' and select the type of pipeline that we want.
 
 ![Screen Shot 2023-02-28 at 1 29 10](https://user-images.githubusercontent.com/68781074/221651656-aa5ab7b2-1efe-4465-9645-eefe0cf72215.png)
 
 ![Screen Shot 2023-02-28 at 1 29 07](https://user-images.githubusercontent.com/68781074/221651745-ba30046a-aae7-4238-8e12-3dc6963ab398.png)
 
-2. untuk di konfigurasi kita bisa mengklik Github hook triger bertujuan agar terintegerasi oleh github
+2. To configure it, we can click on 'GitHub hook trigger' to integrate it with GitHub.
 
 ![Screen Shot 2023-02-28 at 1 33 28](https://user-images.githubusercontent.com/68781074/221652472-d0fe3e23-7e90-4b01-bd90-4ee2d103b76f.png)
 
-3. Lalu pada Pipeline kurang lebih seperti ini untuk konfigurasinya
+3. Then, the Pipeline configuration will look something like this.
 
 ![Screen Shot 2023-02-28 at 1 37 49](https://user-images.githubusercontent.com/68781074/221653760-e5e6a4c6-d19e-4f95-826d-dea2de9ffb51.png)
 
@@ -159,12 +159,11 @@
 
 ![Screen Shot 2023-02-28 at 1 40 03](https://user-images.githubusercontent.com/68781074/221653778-f18b833c-903e-4e7e-835c-28b36c2872d0.png)
 
-4. lalu kita siapkan untuk jenkinsfilenya di dalam git
+4. After that, we need to prepare the Jenkinsfile inside Git.
 
 ![Screen Shot 2023-02-28 at 1 57 52](https://user-images.githubusercontent.com/68781074/221657213-2f9c2a5e-f8c4-4e03-876a-64746c3dbd6a.png)
 
 ```
-My Drive
 pipeline {
     agent any
 
@@ -173,7 +172,7 @@ pipeline {
         def nama_repository = "origin"
         def directory = "~/dumbmerch-fe"
         def credential = 'bhq'
-        def server = 'bhq@10.84.198.151'
+        def server = 'bhq@103.37.124.141'
         def docker_image = 'naninanides/dumbmerch-fe-production'
         def nama_container = 'backend'
     }
@@ -241,8 +240,7 @@ pipeline {
                 }
             }
         }
-    }
-
+        
         stage('push image ke dockerhub') {
             steps {
                 sshagent([credential]){
@@ -259,19 +257,26 @@ pipeline {
     post {
 
         aborted {
-            discordSend description: 'kok di gagalin', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+            discordSend description: '', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Kok di cancel sih???', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
         }
         failure {
-            discordSend description: 'gagal nih bosss', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+            discordSend description: '', footer: '', image: 'https://giphy.com/gifs/theoffice-y9gcCOXpNX8UfZrp0X', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Yah gagal', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
         }
 
         success {
-            discordSend description: 'berhasil nih bos', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'proses yang berjalan', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
+            discordSend description: '', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Berhasil nih boss', webhookURL: 'https://discord.com/api/webhooks/1073903280893202502/FwVTY2tdIp9qekgj3qLn-ta-PuBst9FRg3lqmqFyu0yG_3dYFs5mB7SRCVBFiQACf4ua'
         }
         
     }
+    
 }
 ```
+![Screen Shot 2023-02-28 at 19 29 48](https://user-images.githubusercontent.com/68781074/221854609-7d20c17f-a3df-4e59-bfa6-6484915fab46.png)
+
+![Screen Shot 2023-02-28 at 19 29 51](https://user-images.githubusercontent.com/68781074/221854625-f1c38b72-9609-41f2-940b-bd559100e2c8.png)
+
+![Screen Shot 2023-02-28 at 19 29 53](https://user-images.githubusercontent.com/68781074/221854644-c07a949c-9bf7-43cf-a4ab-34a57c6b25df.png)
+
 
 5. 
 
