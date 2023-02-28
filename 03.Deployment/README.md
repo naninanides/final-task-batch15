@@ -102,15 +102,15 @@
 
 ### Setup Jenkins
 
-1. langkah pertama yang kita akan lakukan adalah setup untuk ssh credential jenkinsnya, kita bisa menggenerate ssh keynya terlebih dahulu
+1. The first step we will take is to set up the SSH credentials for Jenkins, and we can generate the SSH key first.
 
 ![Screen Shot 2023-02-28 at 0 58 34](https://user-images.githubusercontent.com/68781074/221645296-da8445e5-c092-428b-b508-2f52122733c7.png)
 
-2. kita akan mengambil key dari ssh-keygen yang sudah kita generate tadi
+2. We will take the key from the ssh-keygen that we generated earlier.
 
 ![Screen Shot 2023-02-28 at 0 59 58](https://user-images.githubusercontent.com/68781074/221645634-3d9f9c22-46db-45a8-8cfe-76292a65e37b.png)
 
-3. Lalu pada dashboard klik manage jenkins lalu pilih manage credentials dan akan menambahkan credential untuk jenkins
+3. Then, on the dashboard, click 'Manage Jenkins', select 'Manage Credentials', and add the credentials for Jenkins.
 
 ![Screen Shot 2023-02-28 at 1 00 36](https://user-images.githubusercontent.com/68781074/221646268-bd2db535-e702-4de1-96ff-7a033258ce1e.png)
 
@@ -120,17 +120,17 @@
 
 ![Screen Shot 2023-02-28 at 1 01 26](https://user-images.githubusercontent.com/68781074/221648906-bdbf225b-d9b3-4725-b2db-53536864cbfb.png)
 
-4. lalu kita masukan key yang sudah kita generate tadi
+4. Next, we enter the key that we generated earlier.
 
 ![Screen Shot 2023-02-28 at 1 17 58](https://user-images.githubusercontent.com/68781074/221649378-346b4102-2317-44bb-adf9-4f7440a62046.png)
 
 ![Screen Shot 2023-02-28 at 1 18 00](https://user-images.githubusercontent.com/68781074/221649397-358492b4-9816-48d9-90be-31828b79bfaa.png)
 
-5. kita sudah menambahkan credential
+5. We have now added the credentials.
 
 ![Screen Shot 2023-02-28 at 1 19 00](https://user-images.githubusercontent.com/68781074/221649718-90064ba4-8dcb-4b89-9d94-e8c5baa5d341.png)
 
-6. lalu setelah itu kita masukan key.pub ke dalam github
+6. After that, we insert the key.pub into Github.
 
 ![Screen Shot 2023-02-28 at 1 20 36](https://user-images.githubusercontent.com/68781074/221650099-97a8f5b3-0e42-462f-91c5-3ef819fa2166.png)
 
