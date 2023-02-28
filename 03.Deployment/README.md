@@ -225,7 +225,7 @@ CMD ["/home/app/dumbmerch"]
 
 4. After that, we need to prepare the Jenkinsfile inside Git.
 
-![Screen Shot 2023-02-28 at 1 57 52](https://user-images.githubusercontent.com/68781074/221657213-2f9c2a5e-f8c4-4e03-876a-64746c3dbd6a.png)
+![Screen Shot 2023-03-01 at 1 34 38](https://user-images.githubusercontent.com/68781074/221947347-1caaf70d-bf10-40ff-a804-8e23e1549b33.png)
 
 ```
 pipeline {
@@ -342,7 +342,24 @@ pipeline {
 ![Screen Shot 2023-02-28 at 19 29 53](https://user-images.githubusercontent.com/68781074/221854644-c07a949c-9bf7-43cf-a4ab-34a57c6b25df.png)
 
 
-5. 
+5. After that, we can build the pipeline. 
+
+![Screen Shot 2023-03-01 at 1 35 48](https://user-images.githubusercontent.com/68781074/221947517-bbf43a8e-fd8d-4516-b3a0-0053bb9b7e00.png)
+
+6. If the pipeline process is successful, it will look like this.
+
+![Screen Shot 2023-02-28 at 3 00 29](https://user-images.githubusercontent.com/68781074/221947633-b596f426-9735-4049-b926-75b91d2f3e9c.png)
+
+7. Then, we can integrate it into GitHub using a webhook. The webhook function will automatically rebuild the pipeline if there is an update to the Jenkinsfile.
+
+![Screen Shot 2023-02-28 at 18 33 59](https://user-images.githubusercontent.com/68781074/221948201-9cc835bc-a604-4c99-b929-d319d222d394.png)
+
+![Screen Shot 2023-03-01 at 1 38 43](https://user-images.githubusercontent.com/68781074/221948047-75238f77-2e85-40c4-b0e0-68bc954db79d.png)
+
+![Screen Shot 2023-03-01 at 1 39 11](https://user-images.githubusercontent.com/68781074/221948128-c3fb5129-bc7e-48e1-aee6-247b211edb13.png)
+
+![Screen Shot 2023-02-28 at 19 04 05](https://user-images.githubusercontent.com/68781074/221948240-b2b52b81-fad3-44bc-943a-4cbc959f1402.png)
+
 
 
 
