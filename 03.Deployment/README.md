@@ -112,6 +112,22 @@ CMD ["/home/app/dumbmerch"]
 
 ![Screen Shot 2023-02-28 at 23 38 46](https://user-images.githubusercontent.com/68781074/221918618-c0507cb1-a1c2-4b09-97ec-c8b7f4e1c72f.png)
 
+5. Before running container we create docker-compose.yml for frontend and backend.
+
+![Screen Shot 2023-02-28 at 23 59 59](https://user-images.githubusercontent.com/68781074/221924108-e82baca1-cf43-4734-b668-9014bf3d8dd7.png)
+
+![Screen Shot 2023-03-01 at 0 00 54](https://user-images.githubusercontent.com/68781074/221924309-ffefc073-0c80-4e2c-8fa4-331e5011a493.png)
+
+6.now we can running the container.
+
+![Screen Shot 2023-03-01 at 0 04 24](https://user-images.githubusercontent.com/68781074/221925166-39580d10-f1fb-4408-9164-51f34dc3c800.png)
+
+![Screen Shot 2023-03-01 at 0 04 39](https://user-images.githubusercontent.com/68781074/221925397-329cb10c-9592-4ad6-b135-42cfa0f49632.png)
+
+![Screen Shot 2023-03-01 at 0 05 02](https://user-images.githubusercontent.com/68781074/221925412-c03cbaa9-f175-43ce-8fa7-bb6c14a88238.png)
+
+![Screen Shot 2023-03-01 at 0 05 17](https://user-images.githubusercontent.com/68781074/221925452-9ba385f4-7600-45dc-ada3-e50f7ed1420c.png)
+
 ## CICD
 
 ### Install Jenkins
