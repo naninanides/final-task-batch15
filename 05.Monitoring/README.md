@@ -24,7 +24,10 @@
 
 ## Working dashboard in grafana
 
-1. 
+![Screen Shot 2023-03-02 at 17 32 22](https://user-images.githubusercontent.com/68781074/222403558-2810165d-839e-4f27-a68d-15d5678adba9.png)
+
+![Screen Shot 2023-03-02 at 17 32 42](https://user-images.githubusercontent.com/68781074/222403619-dcffc15f-3849-4792-91c2-aefb112b1527.png)
+
 
 ### monitoring jenkins (Challange)
 
