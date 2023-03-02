@@ -28,8 +28,12 @@
 
 ![Screen Shot 2023-03-02 at 17 32 42](https://user-images.githubusercontent.com/68781074/222403619-dcffc15f-3849-4792-91c2-aefb112b1527.png)
 
+## Alerting Grafana
 
-### monitoring jenkins (Challange)
+![Screen Shot 2023-03-03 at 1 09 04](https://user-images.githubusercontent.com/68781074/222514732-0e7543a1-8c66-4212-8be7-111d4e318121.png)
+
+
+## monitoring jenkins (Challange)
 
 ini adalah templat yang saya dapatkan untuk monitoring pipeline cicd menggunakan jenkins
 
