@@ -107,6 +107,21 @@
 
 ![Screen Shot 2023-02-26 at 10 59 53](https://user-images.githubusercontent.com/68781074/221391653-f8266b17-cd42-4e94-89c7-1f1517fc14f9.png)
 
+5. SSL certificate for all domain
+
+![Screen Shot 2023-03-01 at 23 13 51](https://user-images.githubusercontent.com/68781074/222342512-7f024a8f-abc7-418d-8416-e36d947eef73.png)
+
+![Screen Shot 2023-03-01 at 23 27 54](https://user-images.githubusercontent.com/68781074/222342534-cbd6ee48-e282-47c9-be39-104be4995a3a.png)
+
+![Screen Shot 2023-03-01 at 23 28 04](https://user-images.githubusercontent.com/68781074/222342709-fe8a68cd-4cf8-448b-9719-919eca3b5495.png)
+
+![Screen Shot 2023-03-01 at 23 28 19](https://user-images.githubusercontent.com/68781074/222342736-231eb0dd-5bb7-436a-a0ba-63c1f1d2d1ff.png)
+
+![Screen Shot 2023-03-01 at 23 29 03](https://user-images.githubusercontent.com/68781074/222342571-89708447-38bc-4b37-b529-70f571c123b3.png)
+
+![Screen Shot 2023-03-01 at 23 28 42](https://user-images.githubusercontent.com/68781074/222342831-ec4c085f-b740-4f80-b1e2-069ab62d46a1.png)
+
+
 
 ### Install Jenkins
 
