@@ -95,7 +95,7 @@
 
 ![Screen Shot 2023-02-26 at 10 55 42](https://user-images.githubusercontent.com/68781074/221391505-3cb10875-8de3-41c2-8bc1-706a9a11343f.png)
 
-3. we can check if docker was install in virtual machine with.
+3. we can check if nginx was install in virtual machine with.
 > sudo systemctl status nginx
 
 ![Screen Shot 2023-02-26 at 10 57 08](https://user-images.githubusercontent.com/68781074/221391542-3ec62f62-15f1-41df-925b-e92a80d84562.png)
