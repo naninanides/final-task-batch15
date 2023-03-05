@@ -4,11 +4,11 @@
 
 ## Create domain for Virtual Machine
 
-1. membuat semua domain menggunakan platform cloudflare, dan semua ip akan di arahkan ke public IP dari server Gateway.
+1. We will make all domains use the Cloudflare platform, and all IPs will be directed to the public IP of the Gateway server.
 
 ![Screen Shot 2023-03-03 at 1 21 46](https://user-images.githubusercontent.com/68781074/222517861-d6eba723-08f0-459e-ab93-c9b66b5ce9b4.png)
 
-2. membuat reverse proxy untuk tiap server
+2. We will create a reverse proxy for each server.
 
 ![Screen Shot 2023-03-01 at 22 05 11](https://user-images.githubusercontent.com/68781074/222518034-314e13ca-eb7d-45f5-a95e-4c56dbfe20a5.png)
 
@@ -16,15 +16,15 @@
 
 ## SSL Certificates with certbor
 
-1. langkah pertama yang dilakukan adalah untuk menginstall certbot terlebih dahulu, untuk proses installasi certbot kita bisa mengikuti dokumentasi yang sudah disediakan dan apa saja yang di install
+1. The first step is to install Certbot first. To install Certbot, we can follow the provided documentation and check what needs to be installed.
 
 ![Screen Shot 2023-03-01 at 22 39 17](https://user-images.githubusercontent.com/68781074/222518733-71fdf809-d641-48fe-ac54-0d37b9083448.png)
 
-2. lalu kita bisa setup credential dengan membuat sebuah filenya seperti ini 
+2. Next, we can set up the credentials by creating a file like this.
 
 ![Screen Shot 2023-03-01 at 22 42 39](https://user-images.githubusercontent.com/68781074/222519204-d14ee2a4-15cc-4ebf-962d-b7b1eeeaaa13.png)
 
-3. untuk mendapatkan cloudflare api key yaitu menggunakan global token yang di sediakan oleh cloudflare
+3. To obtain the Cloudflare API key, we can use the global token provided by Cloudflare.
 
 ![Screen Shot 2023-03-03 at 1 30 07](https://user-images.githubusercontent.com/68781074/222519952-55d2bf40-51f4-44b7-8cb1-c5b6bb7d49db.png)
 
@@ -32,11 +32,11 @@
 
 ![Screen Shot 2023-03-03 at 1 30 34](https://user-images.githubusercontent.com/68781074/222520012-26596bd2-3162-40a8-864d-a3f78e8aa65c.png)
 
-3. setelah kita membuat file credential kita dapat menjalankan perintah untuk melakukan ssl certificate
+3. After creating the credential file, we can run the command to obtain the SSL certificate.
 
 ![Screen Shot 2023-03-01 at 22 58 14](https://user-images.githubusercontent.com/68781074/222520528-91c55bd2-86fb-4da5-b077-8eaf863ef6d8.png)
 
-4. kita bisa mengecek SSL certificate di dalam configurasi reverse proxy
+4. We can check the SSL certificate in the reverse proxy configuration.
 
 ![Screen Shot 2023-03-03 at 1 36 10](https://user-images.githubusercontent.com/68781074/222520831-8d9eeb1c-dcc1-467f-b55a-067d91184c41.png)
 
@@ -44,7 +44,7 @@
 
 ![Screen Shot 2023-03-03 at 1 36 20](https://user-images.githubusercontent.com/68781074/222520890-e283d925-2eb2-435a-a462-c218e7b8ba4e.png)
 
-5. semua domain sudah terproteksi dengan SSL certificate
+5. All domains are now protected with SSL certificates.
 
 ![Screen Shot 2023-03-03 at 1 39 14](https://user-images.githubusercontent.com/68781074/222521496-1157675f-dacc-4881-8580-2df3a1483b6e.png)
 
