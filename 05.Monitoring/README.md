@@ -4,7 +4,7 @@
 
 ## Monitoring Resource for Appserver, Gateway, and CICD
 
-1. ini adalah metrics dari ketiga server
+1. These are the metrics from the three servers.
 
 ![Screen Shot 2023-03-01 at 15 42 08](https://user-images.githubusercontent.com/68781074/222344176-4c790200-b77c-4354-9971-628186c23d5e.png)
 
@@ -12,11 +12,11 @@
 
 ![Screen Shot 2023-03-01 at 15 47 40](https://user-images.githubusercontent.com/68781074/222344211-c9229927-7f36-4b13-b6e2-896f8490ccdc.png)
 
-2. metric ini akan dipantau oleh prometheus
+2. These metrics will be monitored by Prometheus.
 
 ![Screen Shot 2023-03-01 at 16 13 34](https://user-images.githubusercontent.com/68781074/222344270-091c22ba-c9bc-4ea5-a4f2-7f22fe1dc767.png)
 
-3. dimana prometheus ini akan menjadi data resource di dalam grafana
+3. Prometheus will serve as the data resource within Grafana.
 
 ![Screen Shot 2023-03-02 at 13 02 47](https://user-images.githubusercontent.com/68781074/222344425-f6ce6107-595b-447e-8339-45a017bee9d7.png)
 
@@ -41,13 +41,13 @@ ini adalah templat yang saya dapatkan untuk monitoring pipeline cicd menggunakan
 
 ![image](https://user-images.githubusercontent.com/68781074/222129220-80873500-4916-4876-9ce3-ccff2aa4e25d.png)
 
-jika cicd berhasil
+If the CI/CD process succeeds
 
 ![image](https://user-images.githubusercontent.com/68781074/222135286-4571681b-393f-4352-880d-d88be4e45fd8.png)
 
 ![image](https://user-images.githubusercontent.com/68781074/222135315-21d27486-4a58-4e0b-a42b-0a055fe87d4c.png)
 
-lalu saya juga membuat templat sendiri untuk template jenkins
+I will also create my own template for monitoring the Jenkins dashboard.
 
 ![Screen Shot 2023-03-03 at 0 25 29](https://user-images.githubusercontent.com/68781074/222505167-37cdcfbf-2a42-4512-8f8a-f9c2db7be6da.png)
 
